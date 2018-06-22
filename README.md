@@ -4,11 +4,14 @@ Requisitos
 Nodejs superior a 6
 
 baixar projeto
-git https://github.com/tiagomarsaglia/Desafio
+git clone https://github.com/tiagomarsaglia/Desafio
 
 npm install -g gulp
+
 npm install -g live-server
+
 npm install -g bower
+
 
 Intalar modulos node
 npm install
