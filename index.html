@@ -1,0 +1,56 @@
+<html ng-app="myApp">
+<head >
+  <meta charset="UTF-8">
+  <title>Previsão do Tempo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/plugins.css">
+
+ <script src="public/static/vendor.js"></script>
+ <script src="//unpkg.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+
+  <script src="app/modules/frontpage/components/map-brasil/map-brasil.js"></script>
+  <script src="app/configs/app.js"></script>
+  <script src="app/modules/frontpage/pages/home/controllers/home.js"></script>
+
+</head>
+<nav class="menu-responsivo">
+  <ul>
+    <li><a ui-sref="home" ui-sref-active="active">Início</a></li>
+    <li><a ui-sref="about" ui-sref-active="active">Sobre</a></li>
+  </ul>
+</nav>
+
+<div class="layout">
+<header  ng-include src="'app/core/header/header.html'"  ></header>
+<div class="header"></div>
+
+
+  <body >
+
+    <main>
+
+      <ui-view></ui-view>
+
+    </main>
+  </div>
+
+
+  <footer ng-include src="'app/core/footer/footer.html'" >  <footer>
+    <script>
+			$(function(){
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+			var host = "thiagoagdev.com"
+			if (window.location.host == host && window.location.protocol != "https:") {
+			  window.location.protocol = "https:"
+			}
+		</script>
+</body>
+</html>

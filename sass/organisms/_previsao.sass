@@ -1,0 +1,39 @@
+section.previsao
+
+  .itens
+    +flexbox
+    +justify-content(space-around)
+    flex-direction: column
+    margin-top: -150px
+    z-index: 2
+
+
+
+  .linha
+    +flexbox
+    +justify-content(space-around)
+    +breakpoint($tablet)
+      display: block
+  //+align-items(center)
+  .panel-default
+    -webkit-box-shadow: -16px 13px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow: -16px 13px 5px 0px rgba(0,0,0,0.75)
+    box-shadow: -16px 13px 5px 0px rgba(0,0,0,0.75)
+  .panel-body
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+    padding:
+      top: 5px
+      bottom: 5px
+      right: 15px
+      left: 15px
+  .panel-heading
+    text-align: center
+    font-weight: bold
+
+  .panel-footer
+    span
+      padding: 12px
+  .textos

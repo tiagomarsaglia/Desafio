@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body ng-controller="HomeCtrl">
+  <section class="previsao">
+    <div class="container">
+      <div class="itens">
+        <div class="linha">
+          <div class="panel panel-default"><p>
+            <div class="panel-heading">Cidade: {{ cidade.name }}  Estado: {{ cidade.state}}</p></div>
+            <div class="panel-body"><input type="text" class="form-control" placeholder="Cidade"  ng-model="cidade.name"></div>
+            <div class="panel-body"><input type="text" class="form-control"  placeholder="Sigla Estado"  ng-model="cidade.state"></div>
+            <div class="panel-body"><button type="button" value="salvar" ng-click="buscarCidade()" class="btn btn-embossed btn-primary m-r-20">Buscar</button></div>
+          </div>
+          <div class="panel panel-default">
+
+            <div class="panel-heading"><span>Atual</span></div>
+            <div class="panel-body"><img src="{{prevAtualicon}}"></img></div>
+            <div class="panel-footer"><span>Condição:</span> {{ previsao.data.condition}}</div>
+            <div class="panel-footer"><i class="fas fa-clock"></i><span>data:</span> {{ previsao.data.date }}</div>
+            <div class="panel-footer"><i class="fas fa-thermometer-half"></i><span>Temperatura:</span> {{ previsao.data.temperature }}</div>
+            <div class="panel-footer"><i class="fas fa-male"></i><i class="fas fa-thermometer-half"></i><span>Sensação:</span> {{ previsao.data.sensation }}</div>
+            <div class="panel-footer"><img src="assets/icons/16px/rain-drops.png"></img><span>humidade:</span> {{ previsao.data.humidity }}</div>
+            <div class="panel-footer"><img src="assets/icons/16px/wind-swirls.png"></img><span>Vento:</span> {{ previsao.data.wind_velocity}}</div>
+
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading"> 72 horas</div>
+            <div class="panel-footer"><i class="fas fa-clock"></i><span>data:</span> {{ previsao72.data[0].date_br }}</div>
+            <div class="panel-footer"><img src="assets/icons/16px/rain-drops.png"></img><span>Precepitação Chuva:</span> {{ previsao72.data[0].rain.precipitation }} ml</div>
+            <div class="panel-footer"><i class="fas fa-thermometer-half"></i><span>Temperatuda:</span>{{ previsao72.data[0].temperature.temperature }}</div>
+            <div class="panel-footer"><img src="assets/icons/16px/wind-swirls.png"></img><span>Velocidade Vento:</span> {{ previsao72.data[0].wind.velocity }}</div>
+
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">15 Dias  </div>
+            <div class="panel-body"><img src="{{prev15icon}}"></img></div>
+            <div class="panel-body"><span>Condição:</span> {{previsao15.data[0].text_icon.text.pt}}</div>
+            <div class="panel-footer"><i class="fas fa-clock"></i><span>data:</span> {{ previsao15.data[0].date_br }}  </div>
+              <div class="panel-footer"><img src="assets/icons/16px/rain-drops.png"></img><span>Chuva:</span><i class="fas fa-minus"></i>  {{ previsao15.data[0].rain.precipitation }} ml  <i class="fas fa-plus"></i>  {{ previsao15.data[0].rain.probability }} ml  </div>
+            <div class="panel-footer"><img src="assets/icons/16px/wind-swirls.png"></img><span>Vento:</span><i class="fas fa-minus"></i>  {{ previsao15.data[0].wind.velocity_min }}  <i class="fas fa-plus"></i>  {{ previsao15.data[0].wind.velocity_max }}  </div>
+            <div class="panel-footer"><i class="fas fa-thermometer-half"></i><span>Temperatuda</span></div>
+            <div class="panel-footer"><i class="fas fa-sun"></i><span>Manha:</span><i class="fas fa-minus"></i>  {{ previsao15.data[0].temperature.morning.min }}  <i class="fas fa-plus"></i>  {{ previsao15.data[0].temperature.morning.max }}  </div>
+            <div class="panel-footer"><i class="fas fa-sun"></i>/<i class="fas fa-moon"></i><span>Tarde:</span><i class="fas fa-minus"></i>  {{ previsao15.data[0].temperature.afternoon.min }}  <i class="fas fa-plus"></i>  {{ previsao15.data[0].temperature.afternoon.max }}  </div>
+            <div class="panel-footer"><i class="fas fa-moon"></i><span>Noite:</span><i class="fas fa-minus"></i>  {{ previsao15.data[0].temperature.night.min }}  <i class="fas fa-plus"></i>  {{ previsao15.data[0].temperature.night.max }}  </div>
+
+          </div>
+
+        </div>
+        <div class="linha">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</body></html>
