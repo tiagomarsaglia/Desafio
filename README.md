@@ -14,12 +14,17 @@ npm install -g bower
 
 
 Intalar modulos node
+
 npm install
 
 intalar modulos bower
+
 bower install
 
 Execultar gulp
+
 gulp
 
-Execultar live-server
+Execultar 
+
+live-server
