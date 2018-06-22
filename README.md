@@ -14,8 +14,6 @@ Instalar dependecias globais
 
 #npm install -g bower
 
-#npm install -g sass
-
 
 Intalar modulos node
 
