@@ -1,16 +1,32 @@
 @import molecules/textos
 @import organisms/previsao
+menu
+	background:
+		position: top center
+		repeat: no-repeat
+		color: transparent
+		attachment: fixed
+		size: cover
 header
 	background:
 		position: top center
 		repeat: no-repeat
-		color: $preto
+		color: transparent
 		attachment: fixed
 		size: cover
+leaflet-map
+		height: 50%
+		margin-bottom: -420px
+
+		.leaflet-bottom
+			z-index: -2
+body
+	 +gradient(0deg, $branco, $azul)
+
 .header
 	 background:
  		position: top center
  		repeat: no-repeat
- 		color: $preto
+ 		color: transparent
  		attachment: fixed
  		size: cover

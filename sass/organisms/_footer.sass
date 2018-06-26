@@ -1,14 +1,37 @@
 footer
-	+gradient(0deg, $azul-claro, transparent)
-	padding: 12px
+	margin-top: 150px
+	color: #482513
+	font: 2.1rem/1em "filosofia-regular", "Times New Roman", serif
+	text-align: center
+	+gradient(0deg, #b4ddb4, #005700)
+	border-top-right-radius: 125px
+	border-top-left-radius: 125px
+	.copyright
+		padding-top: 25px
+		padding-bottom: 20px
+		color: white
+		background-color: #2f1207
+	.bottom-coluna
+		padding-left: 25px
+		padding-right: 25px
+	.top-footer-inner>div
+    box-sizing: border-box
+    text-align: center
+	.bottom-footer>div
+    width: 33.3%
+    display: table-cell
+    vertical-align: middle
+    border-left: 1px solid #ADD8E6
+	.bottom-footer
+		 padding-top: 150px
+		 padding-left: 80px
+		 padding-right: 80px
+     display: table
+     margin: 30px auto 0
+     padding-bottom: 30px
+     border-bottom: 1px solid #ADD8E6
 
-	p
-		text-align: center
-
-	.logo-rodape
-		background-color: #00000087
-		img
-			width: 110px
-			height: 110px
-			display: block
-			margin: 35px auto
++breakpoint($tablet)
+	.bottom-footer>div
+		display: block !important
+		width: 100% !important

@@ -1,13 +1,20 @@
 'use strict';
 
+
+
 var app = angular.module('myApp', ['ui.router','myApp.home']);
 
 
-app.controller('header', function($scope) {
-   $scope.estado = 'Tempo';
-    $scope.cidade = 'Previsão';
-     $scope.separacao = 'do.';
+app.controller('header', function($scope,appValues) {
+
+   $scope.estado = appValues.appEstado;
+   $scope.cidade = appValues.appCidade;
+   $scope.separacao = 'do.';
+
+
 });
+
+
 app.config( function($stateProvider,$urlRouterProvider) {
 
    $urlRouterProvider.otherwise('/home');

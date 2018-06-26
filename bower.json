@@ -23,6 +23,7 @@
     "angular-route": "^1.7.2",
     "angular-ui-router": "^1.0.18",
     "angular-ui-event": "^1.0.0",
-    "font-awesome-sass": "^5.0.13"
+    "font-awesome-sass": "^5.0.13",
+    "leaflet-map": "^1.2.0"
   }
 }

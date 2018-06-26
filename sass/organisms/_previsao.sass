@@ -1,14 +1,15 @@
 section.previsao
-
   .itens
     +flexbox
     +justify-content(space-around)
     flex-direction: column
     margin-top: -150px
     z-index: 2
-
-
-
+  .rodape
+    +flexbox
+    +justify-content(space-around)
+    +breakpoint($tablet)
+      display: block
   .linha
     +flexbox
     +justify-content(space-around)

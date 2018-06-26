@@ -4,18 +4,82 @@
 		position: relative
 		z-index: -1
 
-		&:after
-			content: ""
-			display: block
-			position: absolute
-			bottom: 0
-			width: 100%
-			height: 45px
-			+gradient(90deg, $verde, $azul)
 
+		//	+gradient(90deg, $verde, $azul)
+menu
+	+clearfix
+	position: relative
+	z-index: 5
+
+	.logo
+		float: left
+		margin: 0px 0 0
+		img
+			width: 170px
+
+	.links
+		float: right
+		margin: 20px 0 0
+
+		nav,
+		.social
+			display: inline-block
+
+		nav
+			+breakpoint($tablet)
+				display: none
+
+			+breakpoint($celular)
+				display: none
+
+			ul
+				li
+					display: inline-block
+					margin: 0 20px 0 0
+					a
+						color: $preto
+						text-transform: uppercase
+
+						&:hover
+							&:after
+								width: 40%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: $preto
+							+transition(.3s)
+
+		.social
+			li
+				display: inline-block
+				margin: 0 5px 0 0
+				a
+					color: $branco
+					display: block
+					border: 1px solid $preto
+					padding: 4px
+					width: 25px
+					height: 25px
+					line-height: 12px
+					text-align: center
+					+border-radius(120px)
 header
 	+clearfix
 	position: relative
+	height: 500px
+
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		height: 225px
+		background-image: url("http://127.0.0.1:8080/assets/header-nuvens.png")
 
 	.logo
 		float: left
@@ -44,7 +108,7 @@ header
 					display: inline-block
 					margin: 0 20px 0 0
 					a
-						color: $branco
+						color: $preto
 						text-transform: uppercase
 
 						&:hover
@@ -57,7 +121,7 @@ header
 							margin: 5px auto 0
 							width: 0%
 							height: 2px
-							background-color: $branco
+							background-color: $preto
 							+transition(.3s)
 
 		.social
@@ -67,7 +131,7 @@ header
 				a
 					color: $branco
 					display: block
-					border: 1px solid $branco
+					border: 1px solid $preto
 					padding: 4px
 					width: 25px
 					height: 25px
@@ -79,7 +143,7 @@ header
 		clear: both
 		margin: 190px auto 30px auto !important
 		font-weight: $light
-		border: 3px solid $branco
+		border: 3px solid $preto
 		padding: 20px
 		display: table
 		+breakpoint($celular)
@@ -87,6 +151,6 @@ header
 
 	h1,
 	p
-		color: $branco
+		color: $preto
 		text-align: center
 		text-transform: uppercase
