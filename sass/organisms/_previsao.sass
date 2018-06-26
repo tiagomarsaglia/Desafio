@@ -1,18 +1,39 @@
 section.previsao
   .itens
-    +flexbox
-    +justify-content(space-around)
+    display: -webkit-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-pack: distribute
+    -webkit-justify-content: space-around
+    -moz-justify-content: space-around
+    justify-content: space-around
     flex-direction: column
     margin-top: -150px
     z-index: 2
   .rodape
-    +flexbox
-    +justify-content(space-around)
+    display: -webkit-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-pack: distribute
+    -webkit-justify-content: space-around
+    -moz-justify-content: space-around
+    justify-content: space-around
     +breakpoint($tablet)
       display: block
   .linha
-    +flexbox
-    +justify-content(space-around)
+    display: -webkit-box
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-pack: distribute
+    -webkit-justify-content: space-around
+    -moz-justify-content: space-around
+    justify-content: space-around
     +breakpoint($tablet)
       display: block
   //+align-items(center)

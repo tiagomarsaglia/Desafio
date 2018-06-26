@@ -19,7 +19,6 @@
     "angular": "^1.7.2",
     "bootstrap-sass": "^3.3.7",
     "breakpoint-sass": "^2.7.1",
-    "sass-flex-mixin": "^1.0.3",
     "angular-route": "^1.7.2",
     "angular-ui-router": "^1.0.18",
     "angular-ui-event": "^1.0.0",
