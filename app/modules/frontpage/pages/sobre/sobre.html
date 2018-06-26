@@ -13,7 +13,20 @@
       <div class="itens">
 
       <div class="linha">
-        <div ng-include src="'app/modules/frontpage/components/map-brasil/map-brasil.html'" ></div>
+        <div class="panel panel-default" >
+           <div class="panel-heading"><h2> Esse projeto utiliza a API Climatempo</h2></div>
+            <div class="panel-body">
+                 <p>A Climatempo disponibiliza através de uma API a
+                   previsão do tempo e outros dados meteorológicos em tempo real.
+                   Nunca foi tão fácil integrar dados ao seu negócio!
+                 </p>
+                 <h3>Tokens </h3>
+                 <p>Você pode ter mais de um projeto conectado à API e gerar
+                   um token diferente para cada projeto.
+                 </p>
+            </div>
+
+        </div>
       </div >
      </div>
     </div>
@@ -21,119 +34,7 @@
 
 
 
-  <style>
-  #map {
-    display: none;
-  }
 
-  #map .state {
-    cursor: pointer;
-  }
-
-  #map .state .shape {
-    cursor: pointer;
-    -width: 0;
-  }
-
-  #map .state .label_icon_state {
-    fill: #fff;
-    font-family: Arial;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: normal;
-  }
-
-  #map .state .label_state {
-    display: none;
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
-  }
-
-  #map .state:hover .label_state,
-  #map .state.hover .label_state {
-    display: block;
-  }
-
-  #map .model-green .state .shape {
-    fill: #6cb361;
-  }
-
-  #map .model-green .state .icon_state {
-    fill: #10592f;
-  }
-
-  #map .model-green .state .label_icon_state {
-    fill: #fff;
-  }
-
-  #map .model-green .state .label_state {
-    fill: #666;
-  }
-
-  #map .model-green .state:hover .shape,
-  #map .model-green .state.hover .shape {
-    fill: #2d68b2;
-  }
-
-  #map .model-green .state:hover .icon_state,
-  #map .model-green .state.hover .icon_state {
-    fill: #5a95ce;
-  }
-
-  #map .model-orange .state .shape {
-    fill: #fd7132;
-  }
-
-  #map .model-orange .state .icon_state {
-    fill: #6cb361;
-  }
-
-  #map .model-orange .state .label_icon_state {
-    fill: #fff;
-  }
-
-  #map .model-orange .state .label_state {
-    fill: #666;
-  }
-
-  #map .model-orange .state:hover .shape,
-  #map .model-orange .state.hover .shape {
-    fill: #c93f04;
-  }
-
-  #map .model-orange .state:hover .icon_state,
-  #map .model-orange .state.hover .icon_state {
-    fill: #10592f;
-  }
-
-  #map .model-darkgreen .state .shape {
-    fill: #366823;
-  }
-
-  #map .model-darkgreen .state .icon_state {
-    fill: #2779c6;
-  }
-
-  #map .model-darkgreen .state .label_icon_state {
-    fill: #fff;
-  }
-
-  #map .model-darkgreen .state .label_state {
-    fill: #666;
-  }
-
-  #map .model-darkgreen .state:hover .shape,
-  #map .model-darkgreen .state.hover .shape {
-    fill: #4a8c31;
-  }
-
-  #map .model-darkgreen .state:hover .icon_state,
-  #map .model-darkgreen .state.hover .icon_state {
-    fill: #5a95ce;
-  }
-</style>
 
 
 </body></html>

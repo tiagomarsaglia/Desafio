@@ -23,15 +23,27 @@ footer
     vertical-align: middle
     border-left: 1px solid #ADD8E6
 	.bottom-footer
+		 background-image: url(http://127.0.0.1:8080/assets/rodape.jpg)
+		 background-position-y: 1390px
+		 background-size: 100%
+		 height: 500px
+		 border-top-right-radius: 90px
+		 border-top-left-radius: 90px
 		 padding-top: 150px
 		 padding-left: 80px
 		 padding-right: 80px
-     display: table
-     margin: 30px auto 0
-     padding-bottom: 30px
-     border-bottom: 1px solid #ADD8E6
-
+		 display: table
+		 margin: 30px auto 0
+		 padding-bottom: 30px
+		 border-bottom: 1px solid #ADD8E6
 +breakpoint($tablet)
+	.bottom-footer
+		 background-image: transparent !important
+		 background-position-y: 0 !important
+		 background-size: 0 !important
+		 height: 0 !important
+		 border-top-right-radius: 0 !important
+		 border-top-left-radius: 0 !important
 	.bottom-footer>div
 		display: block !important
 		width: 100% !important
